@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+svg {
+    fill: white;
+    height: 50px;
+}
+
+button {
+    height: 48px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 1.5rem;
+}
+
+.headbutton {
+    border-style: none;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 12px;
+    box-shadow: -1px 1px 3px 1px gray;
+    top: 0;
+    position: sticky;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: #ffffff;
+}
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: normal;
+    animation-name: header;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+.headimg {
+    padding: 2px;
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.headertext {
+    font-weight: bold;
+    color: #000000
+}
+
+.headertext > p,
+.headertext > h1 {
+    margin: 0;
+}
+
+.headertext > h1 {
+    font-size: 2.5rem;
+}
+
+.headertext > p {
+    font-size: 1.3rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    padding-left: 32px;
+}
+
+a {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.hero {
+    padding: 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    flex: 1;
+    /* background-color: rgb(15, 15, 15); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('./images/banner.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    min-height: 70vh;
+}
+
+.heroright {       
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    max-width: 600px;
+}
+
+.heromaintext {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.herosubtext {
+    margin: 6px 0 12px;
+    font-size: 1.5rem;
+}
+
+.heroimg {
+    border: #f9faf8;
+    border-style: double;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 50px;
+}
+
+.info-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.info-about > h1 {
+    padding: 24px;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+.info-about-card {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.info-about-card-text > img {
+    height: 400px;
+    width: 400px;
+}
+
+.info-about-card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-about-card-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px
+}
+
+.info-about-card-text-container > p,
+.info-about-card-text-container > h2 {
+    margin: 0;
+    line-height: 2rem;
+    font-family: 'Alkatra';
+}
+
+.info-about-card-text-container > h2 {
+    font-size: 2rem;
+}
+
+.info-about-card-text-container > p {
+    font-size: 1.5rem;
+    font-family: 'Didact Gothic';
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.service-component {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('./images/servicebg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.infoheader {
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.infobox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 18px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 50px;
+}
+
+.boxtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.infoimgs {
+    height: 200px;
+    width: 200px;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+.infotext {
+    font-size: 2rem;
+    font-weight: 600;
+    color:  #000000;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+.infodesc {
+    font-size: 1.3rem;
+    color: #000000;
+    text-align: justify;
+    font-family: 'Didact Gothic';
+}
+
+.info-imgs  {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mission-imgs {
+    height: 350px;
+    width: 350px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 250px;
+}
+
+.subscribebox {
+    padding: 40px 50px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+.subheader {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 1.2rem;
+}
+
+#subid {
+    font-size: 1.2rem;
+    height: 40px;
+    width: 180px;
+    border-color: #f9faf8;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 40px 50px 40px;
+}
+
+.footer-col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-row: 1 / 2;
+    gap: 20px;
+    padding: 10px;
+}
+
+.footer-menu > ul > li > a {
+    color: white;
+    margin-right: 20px;
+}
+
+.footer-menu > ul > li {
+    padding: 5px 0px;
+}
+
+.footerlogo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footerlogo > div > h1 {
+    font-size: 2.5rem;
+}
+
+.footerlogo > div > p {
+    font-size: 1.3rem;
+}
+
+.footerlogo > * > *  {
+    margin: 0;
+}
+
+.footer-row-2 > p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.footer-col-2  > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.footer-col-2 > div > p {
+    font-size: 1.1rem;
+}
+
+.footer-col-3 > p {
+    font-size: 1.1rem;
+}
+
+@keyframes header {
+    0% {
+        transform: translate(-100%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
+}
